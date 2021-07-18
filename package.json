@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "discord.js": "^12.5.3",
+    "node-fetch": "^2.6.1",
+    "ora": "^5.4.1",
+    "request": "^2.88.2"
+  }
+}
