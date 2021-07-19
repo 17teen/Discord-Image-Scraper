@@ -2,7 +2,7 @@
 
 ![](https://media.discordapp.net/attachments/864361757874323476/866420331185831956/unknown.png)
 
-**Watch the [Tutorial]()**
+**Watch the [Tutorial](https://www.youtube.com/watch?v=vf_yYiw8JHo)**
 
 ----------
 **Requirements Before Set-up:**
