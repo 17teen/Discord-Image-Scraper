@@ -1,12 +1,16 @@
 # Discord Image Scrapper
-Image Scrapper is a Node JS script that allows you to download message attachments from any channel where your Discord account is able to go, and to send them with a Discord webhook *only if you want*.
+Discord Image Scrapper is a Node JS script that allows you to download message attachments from any channel where your Discord account is able to go, and to send them with a Discord webhook *only if you want*.
 
 ----------
 **Requirements :**
 
-**I - [Node.JS](https://nodejs.org/en/) installed.**
+**I - [Node.JS](https://nodejs.org/en/)** : Node JS will be used to run the main script called ``index.js`` which contains the code to scrape images from a Discord channel.
 
-**II - Code editor** : [Visual Studio Code](https://code.visualstudio.com) (recommended), [Sublim Text](https://www.sublimetext.com), [Atom](https://atom.io), or any else.
+**II - Code editor** :
+-   [Visual Studio Code](https://code.visualstudio.com) (recommended),
+-   [Sublim Text](https://www.sublimetext.com),
+-   [Atom](https://atom.io),
+-   Any other code editor you might know.
 
 ----------
 **Set-up :**
