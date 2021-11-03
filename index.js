@@ -1,11 +1,16 @@
 const { grey, greenBright, red, yellowBright } = require('chalk'),
-    { webhookId, webhookToken } = require('./config/config.json'),
     { WebhookClient } = require('discord.js'),
+    { writeFileSync } = require('fs'),
+    {
+        token,
+        fetchChannelId,
+        webhookId,
+        webhookToken,
+    } = require('./config/config.json'),
     readline = require('readline').createInterface({
         input: process.stdin,
         output: process.stdout,
     }),
-    { writeFileSync } = require('fs'),
     scrapper = require('./src/scrapper'),
     ora = require('ora'),
     webhookCli = new WebhookClient(webhookId, webhookToken),
@@ -29,7 +34,9 @@ async function sendLinks(links) {
 }
 
 async function main(answer) {
-    const links = await scrapper()
+    const spinner = ora('Fetching...').start(),
+        links = await scrapper(token, fetchChannelId)
+    spinner.stop()
 
     writeFileSync(linksPath, JSON.stringify(links, null, 2))
 
