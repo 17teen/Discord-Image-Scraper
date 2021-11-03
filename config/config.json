@@ -2,5 +2,5 @@
     "token": "TOKEN",
     "fetchChannelId": "FETCH_CHANNEL_ID",
     "webhookId": "WEBHOOK_ID",
-    "webhookToken": "WEBHOOK_TOKEN
+    "webhookToken": "WEBHOOK_TOKEN"
 }
