@@ -1,9 +1,26 @@
 {
+  "name": "discord-image-scraper",
+  "version": "1.0.0",
+  "description": "Scrapes all attachments in a specified discord text/dm channel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
   "dependencies": {
     "chalk": "^4.1.1",
     "discord.js": "^12.5.3",
     "node-fetch": "^2.6.1",
-    "ora": "^5.4.1",
-    "request": "^2.88.2"
-  }
+    "ora": "^5.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quatrecentquatre-404/Discord-Image-Scraper.git"
+  },
+  "keywords": [],
+  "author": "Quatrecentquatre-404 <obvious.ly.dev@gmail.com>",
+  "license": "GNU GPLv3",
+  "bugs": {
+    "url": "https://github.com/Quatrecentquatre-404/Discord-Image-Scraper/issues"
+  },
+  "homepage": "https://github.com/Quatrecentquatre-404/Discord-Image-Scraper#readme"
 }
