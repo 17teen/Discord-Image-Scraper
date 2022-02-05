@@ -17,14 +17,14 @@ Discord Image Scraper is a Node JS script that allows you to download message at
 
 - Download and install the repository on your computer :
 ```bash
-git clone https://github.com/Quatrecentquatre-404/Discord-Image-Scrapper # Clone the repository
-cd Discord-Image-Scrapper # Go on the repository folder
+git clone https://github.com/Quatrecentquatre-404/Discord-Image-Scraper # Clone the repository
+cd Discord-Image-Scrpper # Go on the repository folder
 npm install --save # Install Node dependencies
 ```
 
 - Edit the ``config/config.json`` with your installed code editor and fill the fields with your informations.
 
-- Launch the script :
+- Run the script :
 ```bash
 npm start # Launch the script
 ```
