@@ -1,36 +1,30 @@
-# Image Scraper
-
-![](https://media.discordapp.net/attachments/864361757874323476/866420331185831956/unknown.png)
-
-**Watch the [Tutorial](https://www.youtube.com/watch?v=vf_yYiw8JHo)**
+# Discord Image Scraper
+Discord Image Scraper is a Node JS script that allows you to download message attachments from any channel where your Discord account is able to go, and to send them with a Discord webhook *only if you want*.
 
 ----------
-**Requirements Before Set-up:**
+**Requirements :**
 
-1. Node.JS installed.
-2. Code Editor: VSC(recommended), Sublime, Atom etc.
-----------
-**Set-up: Script**
+**I - [Node.JS](https://nodejs.org/en/)** : Node JS will be used to run the main script called ``index.js`` which contains the code to scrape images from a Discord channel.
 
-- Run the `Launch` file and wait for all the packages to be installed.
-- Right click on the `settings.json` file.
-- Open the file either on Notepad or a code editor i.e VSC (Visual Studio Code).
-- Make sure to add your [User Token](https://www.youtube.com/watch?v=YEgFvgg7ZPI) for the script to work.
-- Fill in ALL the gaps.
-- Save.
-----------
-**Start-up:**
-
-Run the `Scrape.bat` file.
-
-![](https://media.discordapp.net/attachments/864361757874323476/866422329839845376/unknown.png)
-
-*Inspired by [overlisted's message fetcher](https://github.com/overlisted/discord-messages-fetch)*
+**II - Code editor** :
+-   [Visual Studio Code](https://code.visualstudio.com) (recommended),
+-   [Sublim Text](https://www.sublimetext.com),
+-   [Atom](https://atom.io),
+-   Any other code editor you might know.
 
 ----------
-**Contact Me**
+**Set-up :**
 
-﹒[Discord](https://discord.com/users/358310460187082763)
-﹒[Discord Server](https://discord.gg/4nSYqZ8KAA)
-﹒[Telegram](https://t.me/clairvoyant7teen)
-﹒[Steam](https://steamcommunity.com/id/seven777teen/)
+- Download and install the repository on your computer :
+```bash
+git clone https://github.com/Quatrecentquatre-404/Discord-Image-Scraper # Clone the repository
+cd Discord-Image-Scrpper # Go on the repository folder
+npm install --save # Install Node dependencies
+```
+
+- Edit the ``config/config.json`` with your installed code editor and fill the fields with your informations.
+
+- Run the script :
+```bash
+npm start # Launch the script
+```
