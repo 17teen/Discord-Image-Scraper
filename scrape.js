@@ -2,7 +2,7 @@
  *                             *
  *       Image Scraper         *
  *       Author: 7teen         *
- *    Discord: ae#0704         *
+ *    Discord: 7teen#0704      *
  *                             *
  * * * * * * * * * * * * * * * */
 
@@ -50,13 +50,20 @@ async function go() {
     }
     const spinner = ora("Fetching...").start();
     setTimeout(() => {
+        let linkArr = [];
         spinner.succeed(greenBright(`Fetched ${result.length} messages`));
         const content = JSON.stringify(result, null, 2);
         fs.writeFileSync("links.json", content);
         const links = require("./links.json");
         const scraped = links.map((attach) => attach.attachments.map(url => url.proxy_url)).map((u) => u).map(u => u).map((getlink) => getlink.toString()).filter(e => e);
-        const content2 = JSON.stringify(scraped, null, 2);
-        spinner.succeed(greenBright(`Extracted ${scraped.length} images | Check "links.json"`));
+        // Original Array (Filtered without multiple images)
+        const orgArr = scraped.filter((link) => link.includes(",") === false);
+        // New Array (Filtered with multiple images)
+        const fil = scraped.filter((link) => link.includes(","));
+        const newArr = fil.map(l =>  l.split(',') ).flat();
+        const finalArr = linkArr.concat(orgArr, newArr);
+        const content2 = JSON.stringify(finalArr, null, 2);
+        spinner.succeed(greenBright(`Extracted ${finalArr.length} images | Check "links.json"`));
         fs.writeFileSync("links.json", content2);
         process.exit(1);
     }, 2000);
